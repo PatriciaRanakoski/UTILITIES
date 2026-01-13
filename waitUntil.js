@@ -14,3 +14,11 @@ function waitUntil(predicate, time = 10000) {
         }, time);
     });
 }
+
+
+
+waitUntil(() => { document.querySelectorAll('[data-testid="proceed-to-checkout-link"]').length > 0;
+}).then(() => {
+
+//function to be called
+});
